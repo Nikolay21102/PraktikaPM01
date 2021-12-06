@@ -103,6 +103,10 @@ namespace WinAsynchMethod
             this.Controls.Add(this.lblA);
             this.Controls.Add(this.btnWORK);
             this.Controls.Add(this.btnRUN);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Асинхронный запуск";
             this.Load += new System.EventHandler(this.Form1_Load);
