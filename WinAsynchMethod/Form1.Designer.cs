@@ -55,6 +55,7 @@ namespace WinAsynchMethod
             this.btnWORK.TabIndex = 1;
             this.btnWORK.Text = "Работа";
             this.btnWORK.UseVisualStyleBackColor = true;
+            this.btnWORK.Click += new System.EventHandler(this.btnWORK_Click);
             // 
             // lblA
             // 

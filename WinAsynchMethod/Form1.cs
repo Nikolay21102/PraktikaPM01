@@ -56,5 +56,10 @@ namespace WinAsynchMethod
             MessageBox.Show(str, "Результат операции");
 
         }
+
+        private void btnWORK_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Работа кипит!");
+        }
     }
 }
