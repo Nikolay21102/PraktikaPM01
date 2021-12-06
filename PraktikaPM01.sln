@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zadanie_3", "Zadanie_3", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethodHelpProvider", "WinAsynchMethodHelpProvider\WinAsynchMethodHelpProvider.csproj", "{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethodHelp", "WinAsynchMethodHelp\WinAsynchMethodHelp.csproj", "{A552E931-2916-4B0D-A734-6C46C7AF7979}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{E3E8D60F-A468-4608-8312-E522F764FB63} = {10E5E0FD-615D-424D-B145-291F9376AFD2}
 		{D1BCF785-C2E9-44E2-BF6F-0975AEDC7DD1} = {10E5E0FD-615D-424D-B145-291F9376AFD2}
 		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54} = {6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}
+		{A552E931-2916-4B0D-A734-6C46C7AF7979} = {6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9332957C-C19A-45DF-8D9E-6550FBB86B84}
