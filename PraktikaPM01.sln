@@ -3,18 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> Zadanie_2
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zadanie_1", "Zadanie_1", "{CA4DF069-FF49-470B-A39E-D86C8055000B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFReader", "PDFReader\PDFReader.csproj", "{23EC2F8A-BB03-4DFB-9249-CDFC1DCD9E8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAnim", "WinAnim\WinAnim.csproj", "{2CD79B14-F593-43F9-A892-1C07EF797EEC}"
-<<<<<<< HEAD
-=======
-=======
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zadanie_2", "Zadanie_2", "{10E5E0FD-615D-424D-B145-291F9376AFD2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinBackgroundWorker", "WinBackgroundWorker\WinBackgroundWorker.csproj", "{6E9F0552-FD64-4152-93E7-B2CC4BFAA6D2}"
@@ -22,8 +16,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchDelegate", "WinAsynchDelegate\WinAsynchDelegate.csproj", "{E3E8D60F-A468-4608-8312-E522F764FB63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethod", "WinAsynchMethod\WinAsynchMethod.csproj", "{D1BCF785-C2E9-44E2-BF6F-0975AEDC7DD1}"
->>>>>>> Zadanie_2
->>>>>>> Zadanie_2
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zadanie_3", "Zadanie_3", "{6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethodHelpProvider", "WinAsynchMethodHelpProvider\WinAsynchMethodHelpProvider.csproj", "{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethodHelp", "WinAsynchMethodHelp\WinAsynchMethodHelp.csproj", "{A552E931-2916-4B0D-A734-6C46C7AF7979}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethodToolStrip", "WinAsynchMethodToolStrip\WinAsynchMethodToolStrip.csproj", "{F4A21F55-6E32-4C67-BF62-D490702E0EEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> Zadanie_2
 		{23EC2F8A-BB03-4DFB-9249-CDFC1DCD9E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23EC2F8A-BB03-4DFB-9249-CDFC1DCD9E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23EC2F8A-BB03-4DFB-9249-CDFC1DCD9E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,9 +39,6 @@ Global
 		{2CD79B14-F593-43F9-A892-1C07EF797EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CD79B14-F593-43F9-A892-1C07EF797EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CD79B14-F593-43F9-A892-1C07EF797EEC}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
-=======
 		{6E9F0552-FD64-4152-93E7-B2CC4BFAA6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6E9F0552-FD64-4152-93E7-B2CC4BFAA6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E9F0552-FD64-4152-93E7-B2CC4BFAA6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -58,26 +51,31 @@ Global
 		{D1BCF785-C2E9-44E2-BF6F-0975AEDC7DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1BCF785-C2E9-44E2-BF6F-0975AEDC7DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1BCF785-C2E9-44E2-BF6F-0975AEDC7DD1}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> Zadanie_2
->>>>>>> Zadanie_2
+		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-<<<<<<< HEAD
 		{23EC2F8A-BB03-4DFB-9249-CDFC1DCD9E8E} = {CA4DF069-FF49-470B-A39E-D86C8055000B}
 		{2CD79B14-F593-43F9-A892-1C07EF797EEC} = {CA4DF069-FF49-470B-A39E-D86C8055000B}
-=======
-<<<<<<< HEAD
-		{23EC2F8A-BB03-4DFB-9249-CDFC1DCD9E8E} = {CA4DF069-FF49-470B-A39E-D86C8055000B}
-		{2CD79B14-F593-43F9-A892-1C07EF797EEC} = {CA4DF069-FF49-470B-A39E-D86C8055000B}
-=======
 		{6E9F0552-FD64-4152-93E7-B2CC4BFAA6D2} = {10E5E0FD-615D-424D-B145-291F9376AFD2}
 		{E3E8D60F-A468-4608-8312-E522F764FB63} = {10E5E0FD-615D-424D-B145-291F9376AFD2}
 		{D1BCF785-C2E9-44E2-BF6F-0975AEDC7DD1} = {10E5E0FD-615D-424D-B145-291F9376AFD2}
->>>>>>> Zadanie_2
->>>>>>> Zadanie_2
+		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54} = {6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}
+		{A552E931-2916-4B0D-A734-6C46C7AF7979} = {6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB} = {6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9332957C-C19A-45DF-8D9E-6550FBB86B84}
