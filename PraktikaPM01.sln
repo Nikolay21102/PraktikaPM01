@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethodHelpProvider
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethodHelp", "WinAsynchMethodHelp\WinAsynchMethodHelp.csproj", "{A552E931-2916-4B0D-A734-6C46C7AF7979}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethodToolStrip", "WinAsynchMethodToolStrip\WinAsynchMethodToolStrip.csproj", "{F4A21F55-6E32-4C67-BF62-D490702E0EEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A552E931-2916-4B0D-A734-6C46C7AF7979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{D1BCF785-C2E9-44E2-BF6F-0975AEDC7DD1} = {10E5E0FD-615D-424D-B145-291F9376AFD2}
 		{FDC5E52F-8A7E-4B06-9E59-72D9645F8D54} = {6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}
 		{A552E931-2916-4B0D-A734-6C46C7AF7979} = {6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}
+		{F4A21F55-6E32-4C67-BF62-D490702E0EEB} = {6369C2BF-B7DD-4174-9419-0E0B0A39C8F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9332957C-C19A-45DF-8D9E-6550FBB86B84}
