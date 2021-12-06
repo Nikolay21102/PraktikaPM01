@@ -40,8 +40,10 @@ namespace WinAsynchMethod
             // 
             // btnRUN
             // 
+            this.helpProvider1.SetHelpString(this.btnRUN, "Sum");
             this.btnRUN.Location = new System.Drawing.Point(16, 64);
             this.btnRUN.Name = "btnRUN";
+            this.helpProvider1.SetShowHelp(this.btnRUN, true);
             this.btnRUN.Size = new System.Drawing.Size(75, 23);
             this.btnRUN.TabIndex = 0;
             this.btnRUN.Text = "Сумма";
@@ -50,8 +52,10 @@ namespace WinAsynchMethod
             // 
             // btnWORK
             // 
+            this.helpProvider1.SetHelpString(this.btnWORK, "Start work");
             this.btnWORK.Location = new System.Drawing.Point(120, 128);
             this.btnWORK.Name = "btnWORK";
+            this.helpProvider1.SetShowHelp(this.btnWORK, true);
             this.btnWORK.Size = new System.Drawing.Size(75, 23);
             this.btnWORK.TabIndex = 1;
             this.btnWORK.Text = "Работа";
@@ -87,8 +91,10 @@ namespace WinAsynchMethod
             // 
             // txbB
             // 
+            this.helpProvider1.SetHelpString(this.txbB, "For input integer B");
             this.txbB.Location = new System.Drawing.Point(296, 24);
             this.txbB.Name = "txbB";
+            this.helpProvider1.SetShowHelp(this.txbB, true);
             this.txbB.Size = new System.Drawing.Size(100, 20);
             this.txbB.TabIndex = 5;
             // 
