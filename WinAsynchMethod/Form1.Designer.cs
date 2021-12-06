@@ -29,77 +29,78 @@ namespace WinAsynchMethod
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnRUN = new System.Windows.Forms.Button();
+            this.btnWORK = new System.Windows.Forms.Button();
+            this.lblA = new System.Windows.Forms.Label();
+            this.lblB = new System.Windows.Forms.Label();
+            this.txbA = new System.Windows.Forms.TextBox();
+            this.txbB = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRUN
             // 
-            this.button1.Location = new System.Drawing.Point(100, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRUN.Location = new System.Drawing.Point(16, 64);
+            this.btnRUN.Name = "btnRUN";
+            this.btnRUN.Size = new System.Drawing.Size(75, 23);
+            this.btnRUN.TabIndex = 0;
+            this.btnRUN.Text = "Сумма";
+            this.btnRUN.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnWORK
             // 
-            this.button2.Location = new System.Drawing.Point(203, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnWORK.Location = new System.Drawing.Point(120, 128);
+            this.btnWORK.Name = "btnWORK";
+            this.btnWORK.Size = new System.Drawing.Size(75, 23);
+            this.btnWORK.TabIndex = 1;
+            this.btnWORK.Text = "Работа";
+            this.btnWORK.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblA
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(214, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.lblA.AutoSize = true;
+            this.lblA.Location = new System.Drawing.Point(8, 24);
+            this.lblA.Name = "lblA";
+            this.lblA.Size = new System.Drawing.Size(65, 13);
+            this.lblA.TabIndex = 2;
+            this.lblA.Text = "Значение A";
             // 
-            // label2
+            // lblB
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(279, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.lblB.AutoSize = true;
+            this.lblB.Location = new System.Drawing.Point(216, 24);
+            this.lblB.Name = "lblB";
+            this.lblB.Size = new System.Drawing.Size(65, 13);
+            this.lblB.TabIndex = 3;
+            this.lblB.Text = "Значение B";
             // 
-            // textBox1
+            // txbA
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txbA.Location = new System.Drawing.Point(88, 24);
+            this.txbA.Name = "txbA";
+            this.txbA.Size = new System.Drawing.Size(100, 20);
+            this.txbA.TabIndex = 4;
             // 
-            // textBox2
+            // txbB
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txbB.Location = new System.Drawing.Point(296, 24);
+            this.txbB.Name = "txbB";
+            this.txbB.Size = new System.Drawing.Size(100, 20);
+            this.txbB.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 161);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txbB);
+            this.Controls.Add(this.txbA);
+            this.Controls.Add(this.lblB);
+            this.Controls.Add(this.lblA);
+            this.Controls.Add(this.btnWORK);
+            this.Controls.Add(this.btnRUN);
             this.Name = "Form1";
             this.Text = "Асинхронный запуск";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,12 +108,12 @@ namespace WinAsynchMethod
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnRUN;
+        private System.Windows.Forms.Button btnWORK;
+        private System.Windows.Forms.Label lblA;
+        private System.Windows.Forms.Label lblB;
+        private System.Windows.Forms.TextBox txbA;
+        private System.Windows.Forms.TextBox txbB;
     }
 }
 
