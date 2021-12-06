@@ -45,6 +45,7 @@ namespace WinAsynchMethod
             this.btnRUN.TabIndex = 0;
             this.btnRUN.Text = "Сумма";
             this.btnRUN.UseVisualStyleBackColor = true;
+            this.btnRUN.Click += new System.EventHandler(this.btnRUN_Click);
             // 
             // btnWORK
             // 
