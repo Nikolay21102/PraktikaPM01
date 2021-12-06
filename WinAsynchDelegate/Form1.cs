@@ -23,8 +23,20 @@ namespace WinAsynchDelegate
         }
         private void TimeConsumingMethod(int seconds)
         {
-            for (int j = 1; j <= seconds; j++)
-                System.Threading.Thread.Sleep(1000);
+            for (int j = 1; j <= seconds; j++) 
+                SetProgress((int)(j * 100) / seconds);
+            System.Threading.Thread.Sleep(1000);
+            if (Cancel)
+                break;
+            if (Cancel)
+            {
+                System.Windows.Forms.MessageBox.Show("Cancelled");
+                Cancel = false;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Complete");
+            }
         }
         private delegate void TimeConsumingMethodDelegate(int seconds);
 
@@ -41,5 +53,6 @@ namespace WinAsynchDelegate
                 progressBar1.Value = val;
             }
         }
+        bool Cancel;
     }
 }
