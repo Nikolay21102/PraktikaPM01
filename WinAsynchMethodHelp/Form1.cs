@@ -61,5 +61,18 @@ namespace WinAsynchMethod
         {
             MessageBox.Show("Работа кипит!");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Запускаем нужный файл
+                System.Diagnostics.Process.Start("C:\\Users\\Студент\\Documents\\GitHub\\PraktikaPM01\\WinAsynchMethodHelp\\Справка.docx");
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+        }
     }
 }
