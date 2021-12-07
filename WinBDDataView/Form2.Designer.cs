@@ -61,14 +61,14 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.DataSource = this.rBProductDataSetBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 111);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 300);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(454, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 150);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(186, 12);
+            this.button1.Location = new System.Drawing.Point(308, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -78,7 +78,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(170, 41);
+            this.button2.Location = new System.Drawing.Point(290, 41);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 23);
             this.button2.TabIndex = 2;
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 261);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
