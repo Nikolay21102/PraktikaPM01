@@ -17,9 +17,19 @@ namespace WinBD
             InitializeComponent();
         }
 
+        DataView ПоставщикиDataView;
         private void button1_Click(object sender, EventArgs e)
         {
-            oleDbDataAdapter1.Fill(rBProductDataSet.Поставщики);
+            // Загрузка таблицы данными;
+            поставщикиTableAdapter1.Fill(поставщики_и_товарыTableAdapter1.Поставщики);
+            // Настройка объекта DataView
+            ПоставщикиDataView = new DataView(поставщики_и_товарыTableAdapter1.Поставщики);
+            // Настройка dataGridView для отображения данных
+            dataGridView1.DataSource = ПоставщикиDataView;
+            // Присвоения исходного порядка сортировки
+            ПоставщикиDataView.Sort = "Фамилия";
+            ПоставщикиDataView.Sort = SortTextBox.Text;
+            ПоставщикиDataView.RowFilter = FilterTextBox.Text;
         }
 
         private void button2_Click(object sender, EventArgs e)
