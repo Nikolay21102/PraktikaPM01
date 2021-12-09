@@ -33,7 +33,8 @@ namespace WinBD {
         private global::System.Data.DataRelation relationПоставщикиТовары;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-        
+        internal static readonly object поставщики;
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public RBProductDataSet1() {

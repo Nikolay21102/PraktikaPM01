@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
-            this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
+            this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.rBProductDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rBProductDataSet = new WinBD.RBProductDataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.rBProductDataSet = new WinBD.RBProductDataSet();
-            this.rBProductDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SortTextBox = new System.Windows.Forms.TextBox();
@@ -44,8 +44,8 @@
             this.поставщикиTableAdapter1 = new WinBD.RBProductDataSetTableAdapters.ПоставщикиTableAdapter();
             this.поставщики_и_товарыTableAdapter1 = new WinBD.RBProductDataSetTableAdapters.Поставщики_и_товарыTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // oleDbSelectCommand1
@@ -53,13 +53,13 @@
             this.oleDbSelectCommand1.CommandText = "SQL:SELECT*FROM Поставщики";
             this.oleDbSelectCommand1.Connection = this.oleDbConnection1;
             // 
-            // oleDbDataAdapter1
-            // 
-            this.oleDbDataAdapter1.SelectCommand = this.oleDbSelectCommand1;
-            // 
             // oleDbConnection1
             // 
             this.oleDbConnection1.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\RBProduct.mdb";
+            // 
+            // oleDbDataAdapter1
+            // 
+            this.oleDbDataAdapter1.SelectCommand = this.oleDbSelectCommand1;
             // 
             // dataGridView1
             // 
@@ -71,6 +71,16 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(454, 150);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // rBProductDataSetBindingSource
+            // 
+            this.rBProductDataSetBindingSource.DataSource = this.rBProductDataSet;
+            this.rBProductDataSetBindingSource.Position = 0;
+            // 
+            // rBProductDataSet
+            // 
+            this.rBProductDataSet.DataSetName = "RBProductDataSet";
+            this.rBProductDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -91,16 +101,6 @@
             this.button2.Text = "Update Data";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // rBProductDataSet
-            // 
-            this.rBProductDataSet.DataSetName = "RBProductDataSet";
-            this.rBProductDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rBProductDataSetBindingSource
-            // 
-            this.rBProductDataSetBindingSource.DataSource = this.rBProductDataSet;
-            this.rBProductDataSetBindingSource.Position = 0;
             // 
             // label1
             // 
@@ -158,9 +158,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

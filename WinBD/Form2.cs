@@ -23,11 +23,11 @@ namespace WinBD
             // Загрузка таблицы данными;
             поставщикиTableAdapter1.Fill(поставщики_и_товарыTableAdapter1.Поставщики);
             // Настройка объекта DataView
-            ПоставщикиDataView = new DataView(поставщики_и_товарыTableAdapter1.Поставщики);
+            ПоставщикиDataView = new DataView(поставщики_и_товарыTableAdapter1.Поставщик);
             // Настройка dataGridView для отображения данных
             dataGridView1.DataSource = ПоставщикиDataView;
             // Присвоения исходного порядка сортировки
-            ПоставщикиDataView.Sort = "Фамилия";
+            ПоставщикиDataView.Sort = "Поставщики";
             ПоставщикиDataView.Sort = SortTextBox.Text;
             ПоставщикиDataView.RowFilter = FilterTextBox.Text;
         }
@@ -35,6 +35,11 @@ namespace WinBD
         private void button2_Click(object sender, EventArgs e)
         {
             oleDbDataAdapter1.Update(rBProductDataSet);
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
