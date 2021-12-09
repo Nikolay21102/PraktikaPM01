@@ -40,5 +40,28 @@ namespace WinBD
             Form2 Exercise2 = new Form2();
             Exercise2.Show();
         }
+
+        private BindingSource sotrBindingSource;
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // Загрузка таблицы данными;
+            поставщикиTableAdapter1.Fill(RBProductDataSet1.поставщики);
+            // Создание BindingSource для таблицы поставщики
+            sotrBindingSource = new BindingSource((IContainer)RBProductDataSet1.поставщики);
+            // Настройка связывания для элементов TextBox
+            PostavshiktextBox.DataBindings.Add("Text", sotrBindingSource, "Поставщик");
+            AdresstextBox.DataBindings.Add("Text", sotrBindingSource, "Адрес");
+            NumbertextBox.DataBindings.Add("Text", sotrBindingSource, "Номер");
+        }
+
+        private void Previousbutton_Click(object sender, EventArgs e)
+        {
+            sotrBindingSource.MovePrevious();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            sotrBindingSource.MoveNext();
+        }
     }
 }

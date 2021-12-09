@@ -10,6 +10,9 @@
 
 #pragma warning disable 1591
 
+using System;
+using System.Data;
+
 namespace WinBD {
     
     
@@ -2247,6 +2250,11 @@ namespace WinBD.RBProductDataSetTableAdapters {
                 }
             }
         }
+
+        internal void Fill(object поставщик)
+        {
+            throw new NotImplementedException();
+        }
     }
     
     /// <summary>
@@ -2269,7 +2277,9 @@ namespace WinBD.RBProductDataSetTableAdapters {
         private global::System.Data.OleDb.OleDbCommand[] _commandCollection;
         
         private bool _clearBeforeFill;
-        
+        internal object Поставщики;
+        internal DataTable Поставщик;
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public Поставщики_и_товарыTableAdapter() {
